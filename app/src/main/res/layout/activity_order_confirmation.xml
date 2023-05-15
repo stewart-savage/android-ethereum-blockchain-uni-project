@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_style">
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_product_order_confirm_empty_quantity_error"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="652dp"
+                android:gravity="center"
+                android:text="@string/error_please_ensure_no_fields_are_empty"
+                android:textColor="@color/colorAccent"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_order_confirm_product_drawer_menu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="348dp"
+                android:layout_marginBottom="724dp"
+                android:background="@drawable/ic_menu_white"
+                android:contentDescription="@string/nav_menu_button_description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_product_order_confirm_title"
+                android:layout_width="277dp"
+                android:layout_height="74dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="700dp"
+                android:gravity="center"
+                android:text="Please Confirm Your Order"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                app:fontFamily="@font/oxygen_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_product_order_total_cost"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="140dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/oxygen_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btn_product_order_confirm"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btn_home_style"
+                android:drawableLeft="@drawable/ic_confirm_tick"
+                android:padding="16dp"
+                android:text="Confirm and Place Order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_order_product_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="584dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/et_order_product_quantity"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="216dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:hint="Quantity"
+                android:maxLength="2"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_order_product_current_stock"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="312dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_order_product_producer_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="264dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_order_product_weight"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="424dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_order_product_description"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="476dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_order_product_cost"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="364dp"
+                android:background="@drawable/et_background_style"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="#1AFFFFFF"
+        app:menu="@menu/navigation_menu"
+        app:itemTextColor="@color/colorWhite"
+        app:itemIconTint="@color/colorWhite" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OVERSC Application</string>
+    <string name="getEthereumVersion">Get Ethereum Version</string>
+    <string name="executeTransaction">Execute Transaction</string>
+    <string name="enter_new_name">Enter Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_new_password">Enter Password</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="credentials_go_here">Credentials go here</string>
+    <string name="enter_wallet_address">Enter Wallet Address</string>
+    <string name="error_please_ensure_no_fields_are_empty">Error: Please ensure no fields are empty.</string>
+    <string name="confirm_registration">Confirm</string>
+    <string name="error_passwords_don_t_match">Error: Passwords Don\'t Match!</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="empty_login_fields_error">Error: Please Enter All Fields to Log In.</string>
+    <string name="invalid_login_error">Error: Invalid Login Credentials, Please try again.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="nav_menu_button_description">Button to open navigation drawer</string>
+    <string name="enter_wallet_private_key">Enter Wallet Private Key</string>
+</resources>

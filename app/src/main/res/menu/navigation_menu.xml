@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title=""
+        android:enabled="false" >
+    </item>
+
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:onClick="navBarHome"/>
+
+    <item android:title="Make/View Orders">
+        <menu>
+        <item android:id="@+id/nav_products"
+            android:icon="@drawable/ic_buy_product"
+            android:title="Order Produce"
+            android:onClick="navBarOrderProduce"/>
+        <item android:id="@+id/nav_supplier_transactions"
+            android:icon="@drawable/ic_view_list"
+            android:title="View Orders"
+            android:onClick="navBarViewOrders"/>
+        </menu>
+    </item>
+
+    <item android:title="Producers">
+        <menu>
+        <item android:id="@+id/add_new_product"
+            android:icon="@drawable/ic_add"
+            android:title="Add a New Product"
+            android:onClick="navBarAddProduct"/>
+        <item android:id="@+id/edit_products"
+            android:icon="@drawable/ic_edit"
+            android:title="Edit or Remove Products"
+            android:onClick="navBarEditRemoveProduct"/>
+        <item android:id="@+id/nav_producer_transactions"
+            android:icon="@drawable/ic_view_list"
+            android:title="View Sales"
+            android:onClick="navBarViewSales"/>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/nav_logout"
+                android:title="Log Out"
+                android:icon="@drawable/ic_logout"
+                android:onClick="navBarLogOut"/>
+        </menu>
+    </item>
+</menu>

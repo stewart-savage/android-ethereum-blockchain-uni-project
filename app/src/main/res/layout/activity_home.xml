@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_image_home">
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvHomeTitle"
+                    android:layout_width="423dp"
+                    android:layout_height="109dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginBottom="605dp"
+                    android:gravity="center"
+                    android:text="What can we help you with?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/oxygen_bold" />
+
+                <TextView
+                    android:id="@+id/tvWalletBalance"
+                    android:layout_width="243dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="715dp"
+                    android:gravity="center"
+                    android:text="Balance: "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/oxygen_bold" />
+
+                <Button
+                    android:id="@+id/btn_home_order_produce"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="547dp"
+                    android:background="@drawable/btn_home_style"
+                    android:drawableLeft="@drawable/ic_buy_product"
+                    android:padding="16dp"
+                    android:text="Order Produce" />
+
+                <Button
+                    android:id="@+id/btn_home_view_sales"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginBottom="192dp"
+                    android:background="@drawable/btn_home_style"
+                    android:drawableLeft="@drawable/ic_view_list"
+                    android:padding="16dp"
+                    android:text="View Sales" />
+
+                <Button
+                    android:id="@+id/btn_home_log_out"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="85dp"
+                    android:background="@drawable/btn_home_style"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:padding="16dp"
+                    android:text="Log Out" />
+
+                <Button
+                    android:id="@+id/btn_home_edit_remove_product"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="257dp"
+                    android:background="@drawable/btn_home_style"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:padding="16dp"
+                    android:text="Edit or Remove Products" />
+
+                <Button
+                    android:id="@+id/btn_home_add_product"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="27dp"
+                    android:layout_marginBottom="323dp"
+                    android:background="@drawable/btn_home_style"
+                    android:drawableLeft="@drawable/ic_add"
+                    android:padding="16dp"
+                    android:text="Add a New Product" />
+
+                <Button
+                    android:id="@+id/btn_home_view_orders"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="27dp"
+                    android:layout_marginBottom="482dp"
+                    android:background="@drawable/btn_home_style"
+                    android:drawableLeft="@drawable/ic_view_list"
+                    android:padding="16dp"
+                    android:text="View Orders" />
+
+                <ImageButton
+                    android:id="@+id/btn_drawer_menu"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="347dp"
+                    android:layout_marginBottom="714dp"
+                    android:background="@drawable/ic_menu_white"
+                    android:contentDescription="@string/nav_menu_button_description" />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="#1AFFFFFF"
+            app:menu="@menu/navigation_menu"
+            app:itemTextColor="@color/colorWhite"
+            app:itemIconTint="@color/colorWhite" />
+
+</android.support.v4.widget.DrawerLayout>
